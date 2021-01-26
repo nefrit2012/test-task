@@ -215,10 +215,7 @@ function twentytwenty_register_scripts() {
 	wp_enqueue_script( 'twentytwenty-js', get_template_directory_uri() . '/assets/js/index.js', array(), $theme_version, false );
 	wp_script_add_data( 'twentytwenty-js', 'async', true );
 	
-	/*// Ðåãèñòèðóåì ôàéë ñ JS ñêðèïòîì
-    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), '1.0', false);
-    */
-    // Ïîäêëþ÷àåì ôàéë ñ JS ñêðèïòîì
+	
     wp_enqueue_script( 'jquery');
 	
 	//Add my script
