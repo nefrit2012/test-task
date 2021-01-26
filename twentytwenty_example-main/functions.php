@@ -215,10 +215,10 @@ function twentytwenty_register_scripts() {
 	wp_enqueue_script( 'twentytwenty-js', get_template_directory_uri() . '/assets/js/index.js', array(), $theme_version, false );
 	wp_script_add_data( 'twentytwenty-js', 'async', true );
 	
-	/*// Регистируем файл с JS скриптом
+	/*// ГђГҐГЈГЁГ±ГІГЁГ°ГіГҐГ¬ ГґГ Г©Г« Г± JS Г±ГЄГ°ГЁГЇГІГ®Г¬
     wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), '1.0', false);
     */
-    // Подключаем файл с JS скриптом
+    // ГЏГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬ ГґГ Г©Г« Г± JS Г±ГЄГ°ГЁГЇГІГ®Г¬
     wp_enqueue_script( 'jquery');
 	
 	//Add my script
@@ -798,7 +798,7 @@ function true_option_page(){
 function true_option_settings() {
 	global $true_page;
 	// 
-	register_setting( 'true_options', 'true_options', 'true_validate_settings' );
+	register_setting( 'true_options', 'true_options', '' );
  
 	// 
 	add_settings_section( 'true_section_1', 'Text input', '', $true_page );
